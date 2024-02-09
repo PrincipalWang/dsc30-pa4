@@ -11,13 +11,13 @@
  */
 
 public class MyQueue<T> implements MyQueueInterface<T> {
-    DoublyLinkedList<T> MyQueue;
+    DoublyLinkedList<T> myQueue;
 
     /**
      * Constructor of MyQueue
      */
     public MyQueue() {
-        MyQueue = new DoublyLinkedList<>();
+        myQueue = new DoublyLinkedList<>();
     }
 
     /**
@@ -26,7 +26,7 @@ public class MyQueue<T> implements MyQueueInterface<T> {
      * @return if MyQueue is empty
      */
     public boolean isEmpty() {
-        return MyQueue.isEmpty();
+        return myQueue.isEmpty();
     }
 
     /**
@@ -35,7 +35,7 @@ public class MyQueue<T> implements MyQueueInterface<T> {
      * @return size of MyQueue
      */
     public int size() {
-        return MyQueue.size();
+        return myQueue.size();
     }
 
     /**
@@ -44,7 +44,7 @@ public class MyQueue<T> implements MyQueueInterface<T> {
      * @param data data added
      */
     public void enqueue(T data) {
-        MyQueue.add(data);
+        myQueue.add(data);
     }
 
     /**
@@ -53,7 +53,7 @@ public class MyQueue<T> implements MyQueueInterface<T> {
      * @return data removed
      */
     public T dequeue() {
-        return MyQueue.remove(0);
+        return myQueue.remove(0);
     }
 
     /**
@@ -62,6 +62,6 @@ public class MyQueue<T> implements MyQueueInterface<T> {
      * @return data at head
      */
     public T peek() {
-        return MyQueue.get(0);
+        return myQueue.get(0);
     }
 }
