@@ -57,3 +57,4 @@ class ProteinSynthesis {
         return res;
     }
 }
+
