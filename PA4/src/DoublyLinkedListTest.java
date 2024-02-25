@@ -172,8 +172,8 @@ class DoublyLinkedListTest {
         otherlist.add(12);
         otherlist.add(13);
         testlist.swapSegment(otherlist, 4);
-        String res = "(head) -> 7 -> 8 -> 9 -> 10 -> 11 -> 5 -> 6 -> (tail)";
+        String res = "[(head) -> 7 -> 8 -> 9 -> 10 -> 11 -> 5 -> 6 -> (tail)]";
         assertTrue(res.equals(testlist.toString()));
-        res = "(head) -> 0 -> 1 -> 2 -> 3 -> 4 -> 12 -> 13 -> (tail)";
+        res = "[(head) -> 0 -> 1 -> 2 -> 3 -> 4 -> 12 -> 13 -> (tail)]";
     }
 }

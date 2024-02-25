@@ -53,6 +53,9 @@ public class MyQueue<T> implements MyQueueInterface<T> {
      * @return data removed
      */
     public T dequeue() {
+        if(myQueue.isEmpty()){
+            return null;
+        }
         return myQueue.remove(0);
     }
 
@@ -62,6 +65,9 @@ public class MyQueue<T> implements MyQueueInterface<T> {
      * @return data at head
      */
     public T peek() {
+        if(myQueue.isEmpty()){
+            return null;
+        }
         return myQueue.get(0);
     }
 }

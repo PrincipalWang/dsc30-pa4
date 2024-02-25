@@ -50,7 +50,7 @@ class ProteinSynthesis {
             if(trans == 'M' || (!res.isEmpty() && res.peek() == 'M')){
                 res.enqueue(trans);
             }
-            if(trans == '*'){
+            if(trans == '*' && (!res.isEmpty() && res.peek() == 'M')){
                 break;
             }
         }

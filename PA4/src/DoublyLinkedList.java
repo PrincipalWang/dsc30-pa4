@@ -316,13 +316,13 @@ public class DoublyLinkedList<T> extends AbstractList<T> {
     @Override
     public String toString() {
         Node currNode = head.getNext();
-        String res = "(head) -> ";
+        String res = "[(head) -> ";
         while(currNode != tail){
             res += currNode.getElement();
             res += " -> ";
             currNode = currNode.getNext();
         }
-        res += "(tail)";
+        res += "(tail)]";
         return res;
     }
 
